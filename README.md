@@ -35,9 +35,12 @@ p myMethod1 8,4                 # 2
 #JS
 ```node
 function myFunction3(a,b) {return a + b}
-console.log(myFunction3())                 // NaN
+console.log(myFunction3())                 // NaN !!!
 ```
-```Ruby
+#Ruby
+```ruby
 def myMethod3(a,b) = a + b
 p myMethod3                                # wrong number of arguments(given 0 , exended 2)
+def myMethod3(a = nil,b = a) = (return a + b if (a && b); 0 / 0.0)
+p myMethod3                 # NaN
 ```
