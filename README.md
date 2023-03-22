@@ -42,5 +42,5 @@ console.log(myFunction3())                 // NaN !!!
 def myMethod3(a,b) = a + b
 p myMethod3                                # wrong number of arguments(given 0 , exended 2)
 def myMethod3(a = nil,b = a) = (return a + b if (a && b); 0 / 0.0)
-p myMethod3                 # NaN
+p myMethod3                 # NaN         imitation js function   !!!
 ```
