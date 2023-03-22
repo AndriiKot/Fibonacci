@@ -10,6 +10,7 @@ function myFunction1(a,b) {
 console.log(myFunction1(3,5))   // 15
 ```
 #Ruby
+```ruby
 def myMethod1 a,b
   a * b
 end
