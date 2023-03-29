@@ -16,3 +16,40 @@ console.log(myFunction3())        // NaN
 let x = function(a,b){return a - b}
 let y = x(15,5)                   
 console.log(y)                    // 10
+
+
+
+const sum1 = (a,b) => {
+  const result = a + b;
+  return result;
+};
+const amount1 = sum1(4,9);         // 13
+
+
+const sum2 = (a,b) => {
+  return a + b;
+};
+const amount2 = sum2(3,3)          // 6
+
+
+const sum3 = function(a,b) {
+  return a + b;
+};
+
+sum3(4,4)                          // 8
+
+const sum4 = (a,b) => {
+ return a + b;
+};                              
+
+sum4(3,3)                           // 6
+
+
+
+
+
+
+
+
+
+
