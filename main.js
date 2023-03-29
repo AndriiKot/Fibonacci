@@ -45,6 +45,10 @@ const sum4 = (a,b) => {
 sum4(3,3)                           // 6
 
 
+const sum5 = (a,b) => a + b; 
+sum5(5,5)                          // 10
+
+
 
 
 
