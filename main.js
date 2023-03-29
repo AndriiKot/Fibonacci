@@ -49,6 +49,13 @@ const sum5 = (a,b) => a + b;
 sum5(5,5)                          // 10
 
 
+const sum6 = (a = 0,b = 0) => {
+  return a + b;
+};
+
+sum6(3,2)   // 5
+sum6(3)     // 3
+sum1()      // 0
 
 
 
