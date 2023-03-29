@@ -55,7 +55,32 @@ const sum6 = (a = 0,b = 0) => {
 
 sum6(3,2)   // 5
 sum6(3)     // 3
-sum1()      // 0
+sum6()      // 0
+
+const sum7 = (a,b) => {
+ return a + b;
+};
+
+sum7(3,2)   // 5
+sum7(3)      // NaN
+sum7()       // NaN
+
+
+const sum8 = (...args) => {
+ return args[0] + args[1];
+};
+
+sum8(3,2,2,3,23)  // 5
+sum8()            // NaN
+
+const sum9 = (a,...args) => {
+  return args[0] + args[1];
+};
+
+sum9(1,2,3)       // 5
+console.log(sum9(1,2,3))
+
+
 
 
 
