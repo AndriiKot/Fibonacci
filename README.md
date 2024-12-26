@@ -25,20 +25,5 @@
   <div class="js">JS</div>
 </div>
 
-<pre>
-# JS
-function myFunction1(a,b) {
- return a * b
-}
-console.log(myFunction1(3,5))   // 15
-# Ruby
-def myMethod1 a,b
-  a * b
-end
-p myMethod1 3,5             # 15
-</pre>
-
-<!-- Добавьте остальные блоки кода аналогично -->
-
 </body>
 </html>
