@@ -1,6 +1,21 @@
 # Ruby-methods-VS-Js-functions
 Ruby methods VSJs functio
 
+<div class="wrapper">
+  <div class="ruby">
+   ```ruby
+def myMethod1(a,b) = a * b
+```</p>
+</div>
+
+<div class="js">
+```node
+function myFunction1(a,b) {
+ return a * b
+}
+```</p>
+</div>
+
 #JS
 ```node
 function myFunction1(a,b) {
@@ -48,7 +63,7 @@ ____
 #JS
 ```node
 let x = function(a,b){return a - b}
-let y = x(15,5)                   
+let y = x(15,5)
 console.log(y)                    // 10
 ```
 #Ruby
