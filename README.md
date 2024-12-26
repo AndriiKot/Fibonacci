@@ -1,6 +1,5 @@
 <html lang="ru">
 <head>
-    <title>Ruby vs JS</title>
     <!-- <style>
         .wrapper {
             display: flex;
