@@ -1,10 +1,9 @@
 # Ruby-methods-VS-Js-functions
 Ruby methods VSJs functio
 
-<div class="wrapper" style="display: flex;
-    flex-direction: row;">
-  <div class="ruby">Ruby</div>
-  <div class="js">JS</div>
+<div class="wrapper" style="display: flex; flex-direction: row;">
+  <div class="ruby" style="padding: 10px; border: 1px solid red;">Ruby</div>
+  <div class="js" style="padding: 10px; border: 1px solid blue;">JS</div>
 </div>
 
 # JS
