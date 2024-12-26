@@ -1,7 +1,7 @@
 # Ruby-methods-VS-Js-functions
 Ruby methods VSJs functio
 
-<div class="wrapper" display="flex">
+<div class="wrapper" style="display: flex;">
   <div class="ruby">Ruby</div>
   <div class="js">JS</div>
 </div>
