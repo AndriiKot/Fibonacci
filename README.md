@@ -1,12 +1,13 @@
 # Ruby-methods-VS-Js-functions
 Ruby methods VSJs functio
 
-<div class="wrapper" style="display: flex;">
+<div class="wrapper" style="display: flex;
+    flex-direction: row;">
   <div class="ruby">Ruby</div>
   <div class="js">JS</div>
 </div>
 
-#JS
+# JS
 ```node
 function myFunction1(a,b) {
  return a * b
