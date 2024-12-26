@@ -2,18 +2,8 @@
 Ruby methods VSJs functio
 
 <div class="wrapper">
-  <div class="ruby">
-   ```ruby
-def myMethod1(a,b) = a * b
-```</p>
-</div>
-
-<div class="js">
-```node
-function myFunction1(a,b) {
- return a * b
-}
-```</p>
+  <div class="ruby">Ruby</div>
+  <div class="js">JS</div>
 </div>
 
 #JS
