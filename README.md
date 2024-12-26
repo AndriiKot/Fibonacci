@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ruby vs JS</title>
-    <style>
+    <!-- <style>
         .wrapper {
             display: flex;
             flex-direction: row;
@@ -16,7 +16,7 @@
             padding: 10px;
             border: 1px solid blue;
         }
-    </style>
+    </style> -->
 </head>
 <body>
 
