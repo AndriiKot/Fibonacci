@@ -1,20 +1,5 @@
 <html lang="ru">
-<head>
-    <!-- <style>
-        .wrapper {
-            display: flex;
-            flex-direction: row;
-        }
-        .ruby {
-            padding: 10px;
-            border: 1px solid red;
-        }
-        .js {
-            padding: 10px;
-            border: 1px solid blue;
-        }
-    </style> -->
-</head>
+
 <body>
 
 <div class="wrapper" style="display: flex; flex-direction: row;">
