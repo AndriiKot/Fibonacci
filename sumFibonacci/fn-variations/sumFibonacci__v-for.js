@@ -1,5 +1,4 @@
 const fibonacciSum = (n) => {
-  if (n <= 0) return 0;
   let fib1 = 0;
   let fib2 = 1;
   let sum = fib1;
@@ -15,3 +14,4 @@ const fibonacciSum = (n) => {
 };
 
 export default fibonacciSum;
+
