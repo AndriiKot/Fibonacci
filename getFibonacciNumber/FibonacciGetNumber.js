@@ -5,6 +5,7 @@ import fibGetNumberRecursionBadPractice from "./fn-variations/getFibonacciNumber
 import fibGetNumberRecursionLinearTimePractice from "./fn-variations/getFibonacciNumber__v-recursion-linear-practice.js";
 import fibGetNumberRecursionMemoizeBadPractice from "./fn-variations/getFibonacciNumber__v-recursion-memoize-bad-practice.js";
 import fibGetNumberRecursionMemoizeGoodPractice from "./fn-variations/getFibonacciNumber__v-recursion-memoize-good-practice.js";
+import fibGetNumberMatrixExponentiation from "./fn-variations/getFibonacciNumber__v-matrix-exponentiation.js";
 
 class FibonacciGetNumber extends Fibonacci {
   constructor(value, fn) {
@@ -41,5 +42,7 @@ for (let i = 0; i <= 10; i++) {
     new FibonacciGetNumber(i, fibGetNumberRecursionMemoizeBadPractice).result, "\n",
     `Fibonacci get (recursion memoize good practice) for ${i}:`,
     new FibonacciGetNumber(i, fibGetNumberRecursionMemoizeGoodPractice).result, "\n",
+    `Fibonacci get (matrix exponentiation) for ${i}:`,
+    new FibonacciGetNumber(i, fibGetNumberMatrixExponentiation).result, "\n",
   );
 }
