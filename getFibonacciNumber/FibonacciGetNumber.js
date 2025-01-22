@@ -1,5 +1,6 @@
 import Fibonacci from "../Fibonacci/Fibonacci.js";
 import fibGetNumberFor from "./fn-variations/getFibonacciNumber__v-for.js";
+import fibGetNumberWhile from "./fn-variations/getFibonacciNumber__v-while.js";
 import fibGetNumberRecursionBadPractice from "./fn-variations/getFibonacciNumber__v-recursion-bad-practice.js";
 import fibGetNumberRecursionLinearTimePractice from "./fn-variations/getFibonacciNumber__v-recursion-linear-practice.js";
 import fibGetNumberRecursionMemoizeBadPractice from "./fn-variations/getFibonacciNumber__v-recursion-memoize-bad-practice.js";
@@ -27,9 +28,11 @@ class FibonacciGetNumber extends Fibonacci {
 }
 
 for (let i = 0; i <= 10; i++) {
-  console.log(
-    `Fibonacci get (while) for ${i}:`,
+  console.log("\n",
+    `Fibonacci get (for) for ${i}:`,
     new FibonacciGetNumber(i, fibGetNumberFor).result, "\n",
+    `Fibonacci get (while) for ${i}:`,
+    new FibonacciGetNumber(i, fibGetNumberWhile).result, "\n",
     `Fibonacci get (recursion bad practice) for ${i}:`,
     new FibonacciGetNumber(i, fibGetNumberRecursionBadPractice).result, "\n",
     `Fibonacci get (recursion linear practice) for ${i}:`,
