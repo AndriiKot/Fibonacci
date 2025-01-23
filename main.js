@@ -1,38 +1,34 @@
+const workers = {
+  worker_for: "./WebWorkers/getFibonacciNumberByIndex/webWorker__v-for.js",
+  worker_matrix:
+    "./WebWorkers/getFibonacciNumberByIndex/webWorker__v-matrix-exponentiation.js",
+  worker_while: "./WebWorkers/getFibonacciNumberByIndex/webWorker__v-while.js",
+  worker_recursion_bad:
+    "./WebWorkers/getFibonacciNumberByIndex/webWorker__v-recursion-bad-practice.js",
+  worker_recursion_linear:
+    "./WebWorkers/getFibonacciNumberByIndex/webWorker__v-recursion-linear-practice.js",
+  worker_recursion_memoize_bad:
+    "./WebWorkers/getFibonacciNumberByIndex/webWorker__v-recursion-memoize-bad-practice.js",
+  worker_recursion_memoize_good:
+    "./WebWorkers/getFibonacciNumberByIndex/webWorker__v-recursion-memoize-good-practice.js",
+};
+
 const worker = (argMessage) => {
   if (window.Worker) {
-    const w1 = new Worker(
-      "./WebWorkers/getFibonacciNumberByIndex/webWorker__v-for.js",
-      {
-        type: "module",
-      }
-    );
+    Object.entries(workers).forEach(([workerName, workerPath]) => {
+      const w = new Worker(workerPath, { type: "module" });
 
-    w1.postMessage({ value: argMessage });
+      w.postMessage({ value: argMessage });
 
-    w1.onmessage = (message) => {
-      console.log("Result from worker: ", message.data);
-    };
+      w.onmessage = (message) => {
+        console.log(`Result from ${workerName}: `, Array.isArray(message.data) ? message.data[0] : message.data);
+      };
 
-    w1.onerror = (error) => {
-      console.error("Worker error: ", error);
-    };
+      w.onerror = (error) => {
+        console.error(`Worker error from ${workerName}: `, error);
+      };
+    });
   }
-
-  const w2 = new Worker(
-    "./WebWorkers/getFibonacciNumberByIndex/webWorker__v-matrix-exponentiation.js",
-    {
-      type: "module",
-    }
-  );
-  w2.postMessage({ value: argMessage });
-
-  w2.onmessage = (message) => {
-    console.log("Result from worker: ", message.data);
-  };
-
-  w2.onerror = (error) => {
-    console.error("Worker error: ", error);
-  };
 };
 
 document.addEventListener("DOMContentLoaded", () => {
