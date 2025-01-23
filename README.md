@@ -1,3 +1,1 @@
 # Fibonacci
-
-## Fibonacci Sum
