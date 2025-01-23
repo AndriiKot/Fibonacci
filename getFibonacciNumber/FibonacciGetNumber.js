@@ -28,21 +28,13 @@ class FibonacciGetNumber extends Fibonacci {
   }
 }
 
-for (let i = 0; i <= 10; i++) {
-  console.log("\n",
-    `Fibonacci get (for) for ${i}:`,
-    new FibonacciGetNumber(i, fibGetNumberFor).result, "\n",
-    `Fibonacci get (while) for ${i}:`,
-    new FibonacciGetNumber(i, fibGetNumberWhile).result, "\n",
-    `Fibonacci get (recursion bad practice) for ${i}:`,
-    new FibonacciGetNumber(i, fibGetNumberRecursionBadPractice).result, "\n",
-    `Fibonacci get (recursion linear practice) for ${i}:`,
-    new FibonacciGetNumber(i, fibGetNumberRecursionLinearTimePractice).result, "\n",
-    `Fibonacci get (recursion memoize bad practice) for ${i}:`,
-    new FibonacciGetNumber(i, fibGetNumberRecursionMemoizeBadPractice).result, "\n",
-    `Fibonacci get (recursion memoize good practice) for ${i}:`,
-    new FibonacciGetNumber(i, fibGetNumberRecursionMemoizeGoodPractice).result, "\n",
-    `Fibonacci get (matrix exponentiation) for ${i}:`,
-    new FibonacciGetNumber(i, fibGetNumberMatrixExponentiation).result, "\n",
-  );
-}
+export {
+  FibonacciGetNumber,
+  fibGetNumberFor,
+  fibGetNumberWhile,
+  fibGetNumberRecursionBadPractice,
+  fibGetNumberRecursionLinearTimePractice,
+  fibGetNumberRecursionMemoizeBadPractice,
+  fibGetNumberRecursionMemoizeGoodPractice,
+  fibGetNumberMatrixExponentiation,
+};
