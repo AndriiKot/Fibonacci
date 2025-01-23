@@ -1,4 +1,4 @@
-import Fibonacci from "../Fibonacci/Fibonacci.js";
+import Fibonacci from "../Fibonacci.js";
 import fibGetNumberFor from "./fn-variations/getFibonacciNumber__v-for.js";
 import fibGetNumberWhile from "./fn-variations/getFibonacciNumber__v-while.js";
 import fibGetNumberRecursionBadPractice from "./fn-variations/getFibonacciNumber__v-recursion-bad-practice.js";
@@ -38,3 +38,4 @@ export {
   fibGetNumberRecursionMemoizeGoodPractice,
   fibGetNumberMatrixExponentiation,
 };
+

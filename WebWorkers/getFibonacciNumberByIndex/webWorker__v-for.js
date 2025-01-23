@@ -1,4 +1,8 @@
-import { FibonacciGetNumber, fibGetNumberFor } from "./FibonacciGetNumber.js";
+import {
+  FibonacciGetNumber,
+  fibGetNumberFor,
+} from "../../Fibonacci/getFibonacciNumber/FibonacciGetNumber.js";
+
 
 self.onmessage = (e) => {
   const { value } = e.data;
@@ -6,3 +10,4 @@ self.onmessage = (e) => {
   const result = new FibonacciGetNumber(value, fn).result;
   self.postMessage(result);
 };
+

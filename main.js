@@ -1,8 +1,11 @@
 const worker = (argMessage) => {
   if (window.Worker) {
-    const w1 = new Worker("./getFibonacciNumber/webworker1.js", {
-      type: "module",
-    });
+    const w1 = new Worker(
+      "./WebWorkers/getFibonacciNumberByIndex/webWorker__v-for.js",
+      {
+        type: "module",
+      }
+    );
 
     w1.postMessage({ value: argMessage });
 
@@ -14,6 +17,22 @@ const worker = (argMessage) => {
       console.error("Worker error: ", error);
     };
   }
+
+  const w2 = new Worker(
+    "./WebWorkers/getFibonacciNumberByIndex/webWorker__v-matrix-exponentiation.js",
+    {
+      type: "module",
+    }
+  );
+  w2.postMessage({ value: argMessage });
+
+  w2.onmessage = (message) => {
+    console.log("Result from worker: ", message.data);
+  };
+
+  w2.onerror = (error) => {
+    console.error("Worker error: ", error);
+  };
 };
 
 document.addEventListener("DOMContentLoaded", () => {
